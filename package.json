@@ -1,19 +1,21 @@
 {
-  "name": "online-game",
+  "name": "bideo-james",
   "version": "1.0.0",
   "description": "Use of UDP, client and server",
   "main": "index.js",
   "scripts": {
-    "test": "localhost 8081",
     "package": "babel src -d lib",
     "build": "npm run package && npm run start",
-    "start": "node lib/server/index.js"
+    "start:server": "node lib/server/index.js",
+    "start:client": "",
+    "watch:client": "watch \"npm run package\" src/client/js"
   },
   "author": "Yorden",
   "license": "ISC",
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.6.0",
-    "localhost-now": "^1.0.1"
+    "http-server": "^0.10.0",
+    "watch": "^1.0.2"
   }
 }
