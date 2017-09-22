@@ -4,10 +4,11 @@
   "description": "Use of UDP, client and server",
   "main": "index.js",
   "scripts": {
-    "package": "babel src -d lib",
+    "dev:client": "npm run start:client && npm run watch:client",
+    "package:client": "babel src/client -d lib",
     "build": "npm run package && npm run start",
     "start:server": "node lib/server/index.js",
-    "start:client": "",
+    "start:client": "http-server src/client",
     "watch:client": "watch \"npm run package\" src/client/js"
   },
   "author": "Yorden",

@@ -1,2 +1,6 @@
+#generated lib file from babel
 lib/*
+#node modules
 node_modules/*
+#npm logs
+npm-debug.log.*
