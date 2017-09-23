@@ -7,11 +7,11 @@
   "license": "ISC",
   "scripts": {
     "dev:client": "npm run start:client && npm run watch:client",
-    "package:client": "babel src/client -d lib",
+    "package:client": "babel client/src -d client/transpiled",
     "build": "npm run package && npm run start",
     "start:server": "node lib/server/index.js",
-    "start:client": "http-server src/client",
-    "watch:client": "watch \"npm run package\" src/client/js"
+    "start:client": "http-server client",
+    "watch:client": "watch \"npm run package\" client/src"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
